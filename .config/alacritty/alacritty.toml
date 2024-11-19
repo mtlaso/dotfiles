@@ -1,0 +1,24 @@
+import = [
+"~/.config/alacritty/themes/themes/tokyo-night.toml"
+]
+
+[env]
+WINIT_X11_SCALE_FACTOR="1.0"
+
+[font]
+normal= {family = "JetBrainsMono Nerd Font", style = "Regular"}
+size=15
+# 1.) Download a Nerd Font
+# 2.) Unzip and copy to ~/.fonts
+# 3.) Run the command fc-cache -fv to manually rebuild the font cache
+
+[window]
+opacity=0.8
+decorations_theme_variant="Dark"
+startup_mode="Maximized"
+
+[selection]
+save_to_clipboard=true
+
+[terminal]
+osc52="CopyPaste"
