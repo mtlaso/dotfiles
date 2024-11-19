@@ -3,7 +3,7 @@ keybinds {
     // https://github.com/shoukoo/dotfiles/blob/master/zellij.kdl
     // https://shoukoo.github.io/blog/zellij-love-neovim/
     // Tmux.
-    bind "Ctrl k" { SwitchToMode "Tmux"; }
+    bind "Ctrl x" { SwitchToMode "Tmux"; }
     unbind "Ctrl b"
 
     // General.
