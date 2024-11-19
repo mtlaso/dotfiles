@@ -4,11 +4,24 @@ return {
 	config = function()
 		local nvimtree = require("nvim-tree")
 
-		-- recommended settings from nvim-tree documentation
-		--vim.g.loaded_netrw = 1
-		--vim.g.loaded_netrwPlugin = 1
+		vim.g.loaded_netrw = 1
+		vim.g.loaded_netrwPlugin = 1
+
+		local function my_on_attach(bufnr)
+			local api = require("nvim-tree.api")
+
+			local function opts(desc)
+				return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+			end
+
+			-- default mappings
+			api.config.mappings.default_on_attach(bufnr)
+
+			vim.keymap.del("n", "e", { buffer = bufnr })
+		end
 
 		nvimtree.setup({
+			on_attach = my_on_attach,
 			view = {
 				width = 35,
 				relativenumber = true,
@@ -46,8 +59,7 @@ return {
 			},
 		})
 
-		-- set keymaps
-		local keymap = vim.keymap -- for conciseness
+		local keymap = vim.keymap
 
 		keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" }) -- toggle file explorer
 		keymap.set(
