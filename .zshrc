@@ -47,7 +47,7 @@ ZSH_THEME="simple"
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -70,7 +70,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker npm)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,47 +103,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# fnm
-FNM_PATH="/home/danny/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "`fnm env`"
-fi
-
-SOFTWARE_PATH="/home/danny/.local/bin"
-NVIM_PATH="$SOFTWARE_PATH/nvim-linux64/bin"
-
-export PATH="$NVIM_PATH:$PATH"
-
-# go
-GO_DIR="$SOFTWARE_PATH/go/bin"
-export PATH="$GO_DIR:$PATH"
-export PATH="/home/danny/go/bin:$PATH"
-
-
-# zellij
-ZELLIJ_PATH="$SOFTWARE_PATH/zellij-workdir"
-export PATH="$ZELLIJ_PATH:$PATH"
-
-fpath+=${ZDOTDIR:-~}/.zsh_functions
-
 eval "$(zellij setup --generate-auto-start zsh)"
-
-# pnpm
-export PNPM_HOME="/home/danny/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 alias zshconfig="nvim ~/.zshrc"
 alias nvimconfig="nvim ~/.config/nvim"
 alias alacrconfig="nvim ~/.config/alacritty"
-alias hx="flatpak run com.helix_editor.Helix"
-alias vim=nvim
-alias cc="cd /home/danny/Documents/dev/"
-alias ccgo="cd /home/danny/Documents/dev/go"
-alias ccjs="cd /home/danny/Documents/dev/js"
+alias cc="cd /Users/danny/dev"
+alias ccgo="cd /Users/danny/dev/go"
+alias ccjs="cd /Users/danny/dev/js"
 alias npm="pnpm"
 alias npx="pnpx"

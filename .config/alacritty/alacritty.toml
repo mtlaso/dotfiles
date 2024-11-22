@@ -1,4 +1,4 @@
-import = [
+general.import = [
 "~/.config/alacritty/themes/themes/tokyo-night.toml"
 ]
 
@@ -6,16 +6,13 @@ import = [
 WINIT_X11_SCALE_FACTOR="1.0"
 
 [font]
-normal= {family = "JetBrainsMono Nerd Font", style = "Regular"}
-size=15
-# 1.) Download a Nerd Font
-# 2.) Unzip and copy to ~/.fonts
-# 3.) Run the command fc-cache -fv to manually rebuild the font cache
+size=18
 
 [window]
-opacity=0.8
-decorations_theme_variant="Dark"
+blur=true
+#opacity=0.8
 startup_mode="Maximized"
+option_as_alt="Both"
 
 [selection]
 save_to_clipboard=true
