@@ -113,3 +113,11 @@ alias ccgo="cd /Users/danny/dev/go"
 alias ccjs="cd /Users/danny/dev/js"
 alias npm="pnpm"
 alias npx="pnpx"
+
+# pnpm
+export PNPM_HOME="/Users/danny/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

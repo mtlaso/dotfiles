@@ -6,7 +6,8 @@ general.import = [
 WINIT_X11_SCALE_FACTOR="1.0"
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+#normal = { family = "JetBrainsMono Nerd Font" }
+normal = { family = "MesloLGS Nerd Font Propo" }
 size=18
 
 [window]

@@ -7,16 +7,62 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "tab_bar": {
-    "show": true
-  },
-  "vim_mode": true,
-  "autosave": "on_focus_change",
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "theme": {
-    "mode": "system",
-    "light": "poimandres",
-    "dark": "poimandres"
-  }
+	// "auto_update_extensions": {
+	//   "biome": true
+	// },
+
+	"indent_guides": null,
+	"format_on_save": "on",
+	"formatter": {
+		"language_server": {
+			"name": "biome"
+			// "name": "eslint"
+		}
+	},
+	"code_actions_on_format": {
+		// "source.fixAll.eslint": true,
+		// "source.organizeImports.eslint": true,
+		"source.removeUnusedImports.ts": true,
+		"source.fixAll.biome": true,
+		"source.organizeImports.biome": true
+	},
+	// "languages": {
+	//   "TSX": {
+	//     "code_actions_on_format": {
+	//       "source.fixAll.eslint": true
+	//     },
+	//     "show_inline_completions": true
+	//   },
+	//   "TypeScript": {
+	//     "code_actions_on_format": {
+	//       "source.fixAll.eslint": true
+	//     },
+	//     "show_inline_completions": true
+	//   }
+	// },
+	"show_inline_completions": true,
+	"assistant": {
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "gpt-4o"
+		},
+		"version": "2"
+	},
+	"features": {
+		"inline_completion_provider": "copilot"
+	},
+	"buffer_font_family": "Menlo",
+	"tab_bar": {
+		"show": true
+	},
+	"vim_mode": true,
+	"relative_line_numbers": true,
+	"autosave": "on_focus_change",
+	"ui_font_size": 16,
+	"buffer_font_size": 16,
+	"theme": {
+		"mode": "system",
+		"light": "Tokyo Night Storm",
+		"dark": "Tokyo Night"
+	}
 }
