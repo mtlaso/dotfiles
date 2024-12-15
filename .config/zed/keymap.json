@@ -17,6 +17,7 @@
 			"space e": "workspace::ToggleLeftDock",
 			"space c": "pane::DeploySearch",
 			"space x": "diagnostics::Deploy",
+			"space o": "outline::Toggle",
 			"shift shift": "command_palette::Toggle",
 			"tab": "pane::ActivateNextItem",
 			"shift-tab": "pane::ActivatePrevItem",
