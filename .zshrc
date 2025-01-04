@@ -113,6 +113,7 @@ alias ccgo="cd /Users/danny/dev/go"
 alias ccjs="cd /Users/danny/dev/js"
 alias npm="pnpm"
 alias npx="pnpx"
+alias bck="pnpm biome check --write"
 
 # pnpm
 export PNPM_HOME="/Users/danny/Library/pnpm"

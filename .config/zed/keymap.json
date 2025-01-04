@@ -30,7 +30,9 @@
 				}
 			],
 			"space s l": "pane::SplitRight",
-			"space s j": "pane::SplitDown"
+			"space s j": "pane::SplitDown",
+			"ctrl-l": "workspace::ActivateNextPane",
+			"ctrl-h": "workspace::ActivatePreviousPane"
 		}
 	},
 	{
