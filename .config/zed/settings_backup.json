@@ -18,9 +18,9 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": false
+    "enabled_in_assistant": false
   },
-  "agent": {
+  "assistant": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4o"
@@ -113,6 +113,7 @@
     "source.organizeImports.biome": true
   },
   "show_edit_predictions": true,
+  "buffer_font_family": "Menlo",
   "tab_bar": {
     "show": true
   },
@@ -121,7 +122,6 @@
   "autosave": "on_focus_change",
   "ui_font_size": 16,
   "buffer_font_size": 16.0,
-  "buffer_font_family": "Menlo",
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha (Blur)",

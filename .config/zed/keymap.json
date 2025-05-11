@@ -6,39 +6,43 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-	{
-		"context": "Workspace && vim_mode == normal",
-		"bindings": {}
-	},
-	{
-		"context": "Editor && vim_mode == normal",
-		"bindings": {
-			"space f": "file_finder::Toggle",
-			"space e": "workspace::ToggleLeftDock",
-			"space c": "pane::DeploySearch",
-			"space x": "diagnostics::Deploy",
-			"space o": "outline::Toggle",
-			"shift shift": "command_palette::Toggle",
-			"tab": "pane::ActivateNextItem",
-			"shift-tab": "pane::ActivatePrevItem",
-			"[ [": "pane::SwapItemLeft",
-			"] ]": "pane::SwapItemRight",
-			"space /": [
-				"editor::ToggleComments",
-				{
-					"advance_downwards": false
-				}
-			],
-			"space s l": "pane::SplitRight",
-			"space s j": "pane::SplitDown",
-			"ctrl-l": "workspace::ActivateNextPane",
-			"ctrl-h": "workspace::ActivatePreviousPane"
-		}
-	},
-	{
-		"context": "Editor && vim_mode == insert",
-		"bindings": {
-			"j j": ["workspace::SendKeystrokes", "escape"]
-		}
-	}
+  {
+    "context": "Workspace && vim_mode == normal",
+    "bindings": {}
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space s": "pane::DeploySearch",
+      "space f": "file_finder::Toggle",
+      "space e": "workspace::ToggleLeftDock",
+      "space c": "pane::DeploySearch",
+      "space x": "diagnostics::Deploy",
+      "space o": "outline::Toggle",
+      "shift shift": "command_palette::Toggle",
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePreviousItem",
+      "[ [": "pane::SwapItemLeft",
+      "] ]": "pane::SwapItemRight",
+      "space /": [
+        "editor::ToggleComments",
+        {
+          "advance_downwards": false
+        }
+      ],
+      "space s l": "pane::SplitRight",
+      "space s j": "pane::SplitDown",
+      "ctrl-l": "workspace::ActivateNextPane",
+      "ctrl-h": "workspace::ActivatePreviousPane"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": [
+        "workspace::SendKeystrokes",
+        "escape"
+      ]
+    }
+  }
 ]
