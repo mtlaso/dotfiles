@@ -19,6 +19,7 @@
       "space c": "pane::DeploySearch",
       "space x": "diagnostics::Deploy",
       "space o": "outline::Toggle",
+      "space r": "editor::Rename",
       "shift shift": "command_palette::Toggle",
       "tab": "pane::ActivateNextItem",
       "shift-tab": "pane::ActivatePreviousItem",
