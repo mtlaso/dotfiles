@@ -16,7 +16,6 @@
       "space s": "pane::DeploySearch",
       "space f": "file_finder::Toggle",
       "space e": "workspace::ToggleLeftDock",
-      "space c": "pane::DeploySearch",
       "space x": "diagnostics::Deploy",
       "space o": "outline::Toggle",
       "space r": "editor::Rename",

@@ -128,3 +128,5 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
  
 export PATH="/Users/danny/go/bin:$PATH" 
 
+
+. "/Users/danny/.acme.sh/acme.sh.env"
