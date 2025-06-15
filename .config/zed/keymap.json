@@ -11,15 +11,30 @@
     "bindings": {}
   },
   {
+    "context": "Dock",
+    "bindings": {
+      // Filesystem, Terminal.
+      "space e": "workspace::ToggleLeftDock",
+      "space t": "workspace::ToggleBottomDock"
+    }
+  },
+  {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "space s": "pane::DeploySearch",
-      "space f": "file_finder::Toggle",
+      // Filesystem, Terminal.
       "space e": "workspace::ToggleLeftDock",
-      "space x": "diagnostics::Deploy",
+      "space t": "workspace::ToggleBottomDock",
+      // Navigation.
+      "space k": "vim::PageUp",
+      "space j": "vim::PageDown",
+      // Other.
+      "space f": "file_finder::Toggle",
+      "space s": "pane::DeploySearch",
+      "space d": "diagnostics::Deploy",
       "space o": "outline::Toggle",
       "space r": "editor::Rename",
       "shift shift": "command_palette::Toggle",
+      // Tab navigation.
       "tab": "pane::ActivateNextItem",
       "shift-tab": "pane::ActivatePreviousItem",
       "[ [": "pane::SwapItemLeft",
@@ -30,6 +45,7 @@
           "advance_downwards": false
         }
       ],
+      // Splits.
       "space s l": "pane::SplitRight",
       "space s j": "pane::SplitDown",
       "ctrl-l": "workspace::ActivateNextPane",

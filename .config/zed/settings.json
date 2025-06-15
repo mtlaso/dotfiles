@@ -7,6 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "ssh_connections": [
+    {
+      "host": "vps1",
+      "projects": []
+    }
+  ],
   "icon_theme": "Colored Zed Icons Theme Dark",
   "collaboration_panel": {
     "dock": "right"
@@ -21,9 +30,15 @@
     "enabled_in_text_threads": false
   },
   "agent": {
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet"
+    },
+    "default_profile": "minimal",
+    "play_sound_when_agent_done": false,
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
@@ -125,6 +140,6 @@
   "theme": {
     "mode": "system",
     "light": "Blankeos Zen Dark",
-    "dark": "Tokyo Night"
+    "dark": "Blankeos Zen Dark"
   }
 }
