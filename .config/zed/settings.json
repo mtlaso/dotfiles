@@ -63,6 +63,7 @@
     },
     "biome": {
       "settings": {
+        "configuration_path": "./biome.json"
         // "require_config_file": true,
         // "config_path": "biome.json"
       }
@@ -101,12 +102,6 @@
         "gopls",
         "golangci-lint"
       ]
-      // "format_on_save": {
-      // 	"external": {
-      // 		"command": "golangci-lint",
-      // 		"arguments": ["fmt", "--config=golangci.yml"]
-      // 	}
-      // }
     }
   },
   "indent_guides": {

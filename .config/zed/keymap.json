@@ -10,20 +10,20 @@
     "context": "Workspace && vim_mode == normal",
     "bindings": {}
   },
-  {
-    "context": "Dock",
-    "bindings": {
-      // Filesystem, Terminal.
-      "space e": "workspace::ToggleLeftDock",
-      "space t": "workspace::ToggleBottomDock"
-    }
-  },
+  // {
+  //   "context": "Dock && vim_mode == normal",
+  //   "bindings": {
+  //     // Filesystem, Terminal.
+  //     "space e": "workspace::ToggleLeftDock",
+  //     "space t": "workspace::ToggleBottomDock"
+  //   }
+  // },
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      // Filesystem, Terminal.
-      "space e": "workspace::ToggleLeftDock",
-      "space t": "workspace::ToggleBottomDock",
+      // // Filesystem, Terminal.
+      // "space e": "workspace::ToggleLeftDock",
+      // "space t": "workspace::ToggleBottomDock",
       // Navigation.
       "space k": "vim::PageUp",
       "space j": "vim::PageDown",
