@@ -7,6 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "ssh_connections": [
+    {
+      "host": "vps1",
+      "projects": []
+    }
+  ],
   "icon_theme": "Colored Zed Icons Theme Dark",
   "collaboration_panel": {
     "dock": "right"
@@ -18,12 +27,18 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_assistant": false
+    "enabled_in_text_threads": false
   },
-  "assistant": {
-    "default_model": {
+  "agent": {
+    "inline_assistant_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "model": "gpt-4.1"
+    },
+    "default_profile": "minimal",
+    "play_sound_when_agent_done": false,
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
@@ -48,8 +63,8 @@
     },
     "biome": {
       "settings": {
-        // "require_config_file": true,
-        // "config_path": "biome.json"
+        "configuration_path": "./biome.json",
+        "require_config_file": true
       }
     },
     "vtsls": {
@@ -68,7 +83,6 @@
     },
     "golangci-lint": {
       "initialization_options": {
-        // "command": ["golangci-lint", "run", "--out-format", "json", "--issues-exit-code=1"]
         "command": [
           "golangci-lint",
           "run",
@@ -82,38 +96,29 @@
   },
   "languages": {
     "Go": {
-      "language_servers": [
-        "gopls",
-        "golangci-lint"
-      ]
-      // "format_on_save": {
-      // 	"external": {
-      // 		"command": "golangci-lint",
-      // 		"arguments": ["fmt", "--config=golangci.yml"]
-      // 	}
-      // }
+      "language_servers": ["gopls", "golangci-lint"]
     }
+    // "JavaScript": { "language_servers": ["biome"] },
+    // "TypeScript": { "language_servers": ["biome"] },
+    // "JSX": { "language_servers": ["biome"] },
+    // "TSX": { "language_servers": ["biome"] },
+    // "JSON": { "language_servers": ["biome"] },
+    // "JSONC": { "language_servers": ["biome"] },
+    // "CSS": { "language_servers": ["biome"] },
+    // "GraphQL": { "language_servers": ["biome"] }
   },
   "indent_guides": {
     "enabled": false
   },
   "cursor_blink": false,
   "format_on_save": "on",
-  "formatter": "language_server",
-  // "formatter": {
-  // 	"language_server": {
-  // 		"name": "biome"
-  // 	}
-  // },
+  // "formatter": "language_server",
   "code_actions_on_format": {
     // "source.fixAll.eslint": true,
     // "source.organizeImports.eslint": true,
-    "source.removeUnusedImports.ts": true,
-    "source.fixAll.biome": true,
-    "source.organizeImports.biome": true
+    // "source.removeUnusedImports.ts": true,
   },
   "show_edit_predictions": true,
-  "buffer_font_family": "Menlo",
   "tab_bar": {
     "show": true
   },
@@ -122,9 +127,10 @@
   "autosave": "on_focus_change",
   "ui_font_size": 16,
   "buffer_font_size": 16.0,
+  "buffer_font_family": "Menlo",
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Mocha (Blur)",
-    "dark": "Tokyo Night"
+    "light": "Blankeos Zen",
+    "dark": "Blankeos Zen Dark"
   }
 }
