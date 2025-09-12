@@ -20,6 +20,9 @@
 	"collaboration_panel": {
 		"dock": "right"
 	},
+	"title_bar": {
+		"show_branch_icon": true
+	},
 	"edit_predictions": {
 		"disabled_globs": [],
 		"mode": "subtle",
@@ -38,12 +41,13 @@
 		"default_profile": "ask",
 		"play_sound_when_agent_done": true,
 		"default_model": {
-			"provider": "copilot_chat",
-			"model": "o3-mini"
+			"provider": "zed.dev",
+			"model": "claude-sonnet-4"
 		}
 	},
 	"project_panel": {
-		"entry_spacing": "comfortable"
+		"entry_spacing": "comfortable",
+		"sticky_scroll": false
 	},
 	"lsp": {
 		"clangd": {
@@ -103,28 +107,18 @@
 		"JSON": { "formatter": { "language_server": { "name": "biome" } } },
 		"JSONC": { "formatter": { "language_server": { "name": "biome" } } },
 		"CSS": { "formatter": { "language_server": { "name": "biome" } } }
-		// "GraphQL": { "formatter": { "language_server": { "name": "biome" } } }
 	},
 	"indent_guides": {
 		"enabled": false
 	},
 	"cursor_blink": false,
 	"format_on_save": "on",
-	// "formatter": "language_server",
-	"code_actions_on_format": {
-		// "source.fixAll.eslint": true,
-		// "source.organizeImports.eslint": true,
-		// "source.removeUnusedImports.ts": true,
-	},
 	"show_edit_predictions": true,
-	"tab_bar": {
-		"show": true
-	},
 	"vim_mode": true,
 	"relative_line_numbers": true,
 	"autosave": "on_focus_change",
 	"ui_font_size": 16,
-	"buffer_font_size": 17.0,
+	"buffer_font_size": 18,
 	"buffer_font_family": "mononoki",
 	"buffer_line_height": "standard",
 	"theme": {
